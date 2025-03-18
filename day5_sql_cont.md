@@ -12,6 +12,11 @@ where count(score < 60)>2
 
 改
 ```sql
+select id
+from student_scores
+where score<60
+group by id
+having count(*) > 2
 
 ```
 
