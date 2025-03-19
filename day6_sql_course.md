@@ -39,3 +39,22 @@ this is fine too
 
 ![alt text](image-18.png)
 
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+
+
+给一个id，科目；成绩的表，搜索不及格科目大于两门课的学生id。
+
+
+```sql
+select id
+from student_scores
+where score<60
+group by id
+having count(*) > 2
+
+```
+
+
